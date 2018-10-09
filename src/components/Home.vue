@@ -17,6 +17,7 @@ export default {
         goToMenu(){
             //跳转到上一次浏览的页面，例：点击上面的按钮就会返回到上一次浏览的页面
             // this.$router.go(-1);
+            this.$router.goBack();
 
             //指定跳转的地址
             // this.$router.replace('/menu');
@@ -25,9 +26,16 @@ export default {
             // this.$router.replace({name:'menuLink'});
 
             //通过push跳转(最常用),里面也可以输入是哪个面一样的名字
-            this.$router.push('/admin');
+            // this.$router.push('/admin');
                     }
     }    
 }
 </script>
+<style>
+  #home{
+      background:url('../../src/assets/timg.jpg');
+      height: 85vh;
+  }
+</style>
+
 

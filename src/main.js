@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import './assets/css/bootstrap.min.css'  
+
 // import router from './router'
 // import Home from './components/Home'
 // import Menu from './components/Menu'

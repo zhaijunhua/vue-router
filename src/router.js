@@ -17,14 +17,14 @@ import PersonName from './components/about/contact/PersonName'
 
 export const routes=[
         
-        {path:'/',name:'homeLink',components:{
+        {path:'/',name:'homeLink',meta:{index:1},components:{
             default:Home,
             'ordering':Ordering,
             'delivery':Delivery,
             'history':History       //router-view复用
         }},
-        {path:'/menu',name:'menuLink',component:Menu},
-        {path:'/admin',name:'adminLink',component:Admin},
+        {path:'/menu',name:'menuLink',meta:{index:2},component:Menu},
+        {path:'/admin',name:'adminLink',meta:{index:3},component:Admin},
         {path:'/about',name:'aboutLink',redirect:'/about/history',component:About,
             children:[
                 {path:'/about/contact',name:'contactLink',redirect:'/about/contact/personname',component:Contact,children:[
@@ -39,6 +39,9 @@ export const routes=[
         {path:'/Register',name:'registerLink',component:Register},
         {path:'*',redirect:'/'}   //如果输入的地址没有匹配到上面任何一种类型，就会跳转到home，可以根据需要进行修改
     ]
+
+
+
 
  
   
